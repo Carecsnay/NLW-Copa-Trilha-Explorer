@@ -1,9 +1,16 @@
+
+function changeTheme() {
+    let el = document.getElementById('root');
+
+    el.classList.toggle("green");
+}
+
 function createGame(player1, hour, player2) {
     return `
     <li>
-        <img src="./assets/flags/icon-${player1}.svg" alt="Bandeira do ${player1}">
+        <img src="./assets/flags/icon-${player1}.svg" alt="Bandeira ${player1}">
             <strong>${hour}:00</strong>
-        <img src="./assets/flags/icon-${player2}.svg" alt="Bandeira da ${player2}">
+        <img src="./assets/flags/icon-${player2}.svg" alt="Bandeira ${player2}">
     </li>
     `
 }
