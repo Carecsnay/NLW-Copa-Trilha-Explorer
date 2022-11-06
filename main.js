@@ -7,13 +7,14 @@ function createGame(player1, hour, player2) {
     </li>
     `
 }
-// let delay = -0.3;
+
+let delay = -0.4; //variável de controle para controlar as animações
 
 function createCard(date, day, game) {
-    // delay = delay + 0.3;
-    // style="animation-delay: ${delay}s"
+    delay = delay + 0.4; //incrementando variável
+    
     return `
-        <div class="card"> 
+        <div class="card" style="animation-delay: ${delay}s"/> 
             <h2>${date}<span>${day}</span></h2>
 
             <ul>
@@ -49,3 +50,4 @@ document.querySelector('#cards').innerHTML =
         + createGame("Ghana", "12", "Uruguay")
         + createGame("Serbia", "16", "Switzerland")
         + createGame("Brazil", "16", "Cameroon"))
+        

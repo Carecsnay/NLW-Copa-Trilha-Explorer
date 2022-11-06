@@ -5,16 +5,39 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --card-color-primary: #f7dd43;
+    --card-tittle-border-color: #746615;
+    --card-bg-color: #1d1c19;
+    --bg-image: url(./assets/bgs/bg-yellow.svg)
+}
+
+.blue {
+    --card-color-primary: #338af3;
+    --card-tittle-border-color: #338af3;
+    --card-bg-color: #1d1c19;
+    --bg-image: url(./assets/bgs/bg-blue.svg)
+}
+
+.green {
+    --card-color-primary: #047C3F;
+    --card-tittle-border-color: #047C3F;
+    --card-bg-color: #1d1c19;
+    --bg-image: url(./assets/bgs/bg-green.svg)
+}
+
 body {
-    background-color: #121214;
-    background-image: url(./assets/bg.svg);
-    background-position-x: center; /* Esq-Direita */
-    background-position-y: -720px; /* Cima-baixo */
+    background-color: var(--card-bg-color);
+    background-image: var(--bg-image);
+    background-position: top center; /*y e x respectivamente */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #app {
     width: fit-content; /*Encaixe no conteúdo*/
-    margin: 52px auto;
+    margin: auto;
+    padding-top: 52px;
 }
 
 header {
@@ -33,7 +56,7 @@ header {
 .card {
     padding: 32px 23px;
     background: #1D1c19;
-    border-bottom: 2px solid #f7dd43;
+    border-bottom: 2px solid var(--card-color-primary);
     border-radius: 6px;
 }
 
@@ -42,7 +65,7 @@ header {
     margin-bottom: 56px;
 
     padding: 8px 16px;
-    border: 1px solid #746615;
+    border: 1px solid var(--card-tittle-border-color);
     border-radius: 6px;
     width: fit-content;
 
@@ -86,7 +109,7 @@ header {
 
 .card ul li strong {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 125%;
 
     color: #E1E1E6;
@@ -100,7 +123,7 @@ header {
 }
 
 .card h2, .card ul li strong, .card ul li img {
-    transition: transform .2s;
+    transition: transform .3s;
 
 }
 
@@ -116,5 +139,25 @@ header {
 }
 
 .card {
-    animation: appear .8s forwards;
+    opacity: 0;
+    animation: appear .2s forwards;
+}
+
+/* Responsividade */
+
+@media (min-width: 400px) {
+    #cards {
+        max-width: 1316px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header {
+        margin-bottom: calc(63px / 2);
+    }
+
+    header img{
+        width: calc(183px * 1.2);
+    }
 }
