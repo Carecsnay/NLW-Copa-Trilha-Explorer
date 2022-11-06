@@ -9,7 +9,7 @@
     --card-color-primary: #f7dd43;
     --card-tittle-border-color: #746615;
     --card-bg-color: #1d1c19;
-    --bg-image: url(./assets/bgs/bg-yellow.svg)
+    --bg-image: url(./assets/bgs/bg-yellow.svg);
 }
 
 .blue {
@@ -74,7 +74,7 @@ header {
     justify-content: center;
     gap: 16px;
 
-    color: #f7dd43;
+    color: var(--card-color-primary);
 }
 
 .card h2 span {

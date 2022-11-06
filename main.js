@@ -1,16 +1,34 @@
 
 function changeTheme() {
-    let el = document.getElementById('root');
+    b = "blue";
+    g = "green";
+    y = "yellow";
+    
+    if(document.body.classList.contains(y)) {
+        document.body.classList.remove(y) & document.body.classList.add(b);
+        return document.querySelector('#logo').innerHTML = `<img id="logo" src="./assets/logos/logo-${b}.svg" alt="logo">`;
+    }
 
-    el.classList.toggle("green");
+    if (document.body.classList.contains(b)) {
+        document.body.classList.remove(b) & document.body.classList.add(g);
+        return document.querySelector('#logo').innerHTML = `<img id="logo" src="./assets/logos/logo-${g}.svg" alt="logo">`
+    }
+
+    else if(document.body.classList.contains(g)) {
+        document.body.classList.remove(g) & document.body.classList.add(y);
+        return document.querySelector('#logo').innerHTML = `<img id="logo" src="./assets/logos/logo-${y}.svg" alt="logo">`
+
+    }
 }
+    
+
 
 function createGame(player1, hour, player2) {
     return `
     <li>
-        <img src="/assets/flags/icon-${player1}.svg" alt="Bandeira ${player1}">
+        <img src="./assets/flags/icon-${player1}.svg" alt="Bandeira do ${player1}">
             <strong>${hour}:00</strong>
-        <img src="/assets/flags/icon-${player2}.svg" alt="Bandeira ${player2}">
+        <img src="./assets/flags/icon-${player2}.svg" alt="Bandeira da ${player2}">
     </li>
     `
 }
