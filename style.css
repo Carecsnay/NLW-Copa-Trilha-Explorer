@@ -91,3 +91,30 @@ header {
 
     color: #E1E1E6;
 }
+
+/* transições */
+
+.card h2:hover, .card ul li strong:hover, .card ul li img:hover {
+    transform: scale(1.2);
+
+}
+
+.card h2, .card ul li strong, .card ul li img {
+    transition: transform .2s;
+
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card {
+    animation: appear .8s forwards;
+}
