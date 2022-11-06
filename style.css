@@ -115,6 +115,24 @@ header {
     color: #E1E1E6;
 }
 
+footer {
+    display: flex;
+    justify-content: end;
+}
+
+footer button {
+    position: absolute;
+    padding: 10px;
+    margin: 0 60px;
+    color: var(--card-color-primary);
+    background-color: transparent;
+    border: 2px solid var(--card-color-primary);
+    border-radius: 20px;
+    font-size: 14px;  
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
 /* transições */
 
 .card h2:hover, .card ul li strong:hover, .card ul li img:hover {

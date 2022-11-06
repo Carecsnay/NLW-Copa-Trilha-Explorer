@@ -1,4 +1,3 @@
-
 function changeTheme() {
     b = "blue";
     g = "green";
