@@ -1,4 +1,4 @@
-<h1 align="center"> NLW Copa Trilha Explorer </h1>
+<!-- <h1 align="center"> NLW Copa Trilha Explorer </h1>
 
 <p align="center">
 Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
@@ -63,4 +63,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ❤️ por Bruno Benicio 👋 em parceria com a Rocketseat 💜
+Feito com ❤️ por Bruno Benicio 👋 em parceria com a Rocketseat 💜 -->

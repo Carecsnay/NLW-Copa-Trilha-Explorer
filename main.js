@@ -53,7 +53,7 @@ document.querySelector('#cards').innerHTML =
         createCard("24/11", "Quinta", 
           
         createGame("Switzerland", "07", "Cameroon")     // Pra add jogos basta concatenar "+" depois de um createGame 
-        + createGame("Uruguay", "10", "South Korea") 
+        + createGame("Uruguay", "10", "South-Korea") 
         + createGame("Portugal", "13", "Ghana")
         + createGame("Brazil", "16", "Serbia"))
     
@@ -62,7 +62,7 @@ document.querySelector('#cards').innerHTML =
         createCard("28/11", "Segunda", 
         
         createGame("Cameroon", "07", "Serbia")
-        + createGame("South Korea", "10", "Ghana")
+        + createGame("South-Korea", "10", "Ghana")
         + createGame("Brazil", "13", "Switzerland")
         + createGame("Uruguay", "16", "Portugal"))
     
@@ -70,7 +70,7 @@ document.querySelector('#cards').innerHTML =
         
         createCard("02/12", "Sexta", 
         
-        createGame("South Korea", "12", "Portugal")
+        createGame("South-Korea", "12", "Portugal")
         + createGame("Ghana", "12", "Uruguay")
         + createGame("Serbia", "16", "Switzerland")
         + createGame("Brazil", "16", "Cameroon"))
