@@ -99,7 +99,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 36px;
-    
+    font-size: 12px;
 }
 
 .card ul li + li { /* Pega um filho de LI e aplica as propriedades */
