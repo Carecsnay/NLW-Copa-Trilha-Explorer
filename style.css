@@ -34,10 +34,28 @@ body {
     background-size: cover;
 }
 
+body div button {
+    position: absolute;
+    margin: 50px 40px;
+    padding: 10px;
+    color: var(--card-color-primary);
+    background-color: transparent;
+    border: 2px solid var(--card-color-primary);
+    border-radius: 20px;
+    font-size: 13px;  
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#logo {
+    margin-bottom: 10px;
+}
+
 #app {
     width: fit-content; /*Encaixe no conteúdo*/
     margin: auto;
-    padding-top: 52px;
+    padding-top: 32px;
 }
 
 header {
@@ -57,7 +75,7 @@ header {
     padding: 32px 23px;
     background: #1D1c19;
     border-bottom: 2px solid var(--card-color-primary);
-    border-radius: 6px;
+    border-radius: 6px;  
 }
 
 .card h2 {
@@ -89,7 +107,7 @@ header {
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
 
     width: 270px;
 }
@@ -104,7 +122,7 @@ header {
 
 .card ul li + li { /* Pega um filho de LI e aplica as propriedades */
     border-top: 1px solid #323238;
-    padding-top: 20px; 
+    padding-top: 16px; 
 }
 
 .card ul li strong {
@@ -115,34 +133,14 @@ header {
     color: #E1E1E6;
 }
 
-footer {
-    display: flex;
-    justify-content: end;
-}
-
-footer button {
-    position: absolute;
-    padding: 10px;
-    margin: 0 60px;
-    color: var(--card-color-primary);
-    background-color: transparent;
-    border: 2px solid var(--card-color-primary);
-    border-radius: 20px;
-    font-size: 14px;  
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-}
-
 /* transições */
 
-.card h2:hover, .card ul li strong:hover, .card ul li img:hover {
+body div button:hover, .card h2:hover, .card ul li strong:hover, .card ul li img:hover {
     transform: scale(1.2);
-
 }
 
-.card h2, .card ul li strong, .card ul li img {
+body div button, .card h2, .card ul li strong, .card ul li img {
     transition: transform .3s;
-
 }
 
 @keyframes appear {
