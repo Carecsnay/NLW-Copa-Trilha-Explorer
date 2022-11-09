@@ -25,9 +25,9 @@ function changeTheme() {
 function createGame(player1, hour, player2) {
     return `
     <li>
-        <img src="./assets/bgs/icon-${player1}.svg" alt="Bandeira do ${player1}">
+        <img src="./assets/flags/icon-${player1}.svg" alt="Bandeira do ${player1}">
             <strong>${hour}:00</strong>
-        <img src="./assets/bgs/icon-${player2}.svg" alt="Bandeira da ${player2}">
+        <img src="./assets/flags/icon-${player2}.svg" alt="Bandeira da ${player2}">
     </li>
     `
 }
