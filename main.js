@@ -24,12 +24,13 @@ function changeTheme() {
 
 function createGame(player1, hour, player2) {
     const iconFlag1 = `./src/countryflags/icon-${player1}.svg`;
+    const iconFlag2 = `./src/countryflags/icon-${player2}.svg`;
 
     return `
     <li>
         <img src=${iconFlag1} alt="Bandeira do país ${player1}">
             <strong>${hour}:00</strong>
-        <img src="./assets/countryflags/icon-${player2}.svg" alt="Bandeira do país ${player2}">
+        <img src=${iconFlag2} alt="Bandeira do país ${player2}">
     </li>
     `
 }
