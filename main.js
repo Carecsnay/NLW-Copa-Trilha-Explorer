@@ -23,7 +23,7 @@ function changeTheme() {
 
 
 function createGame(player1, hour, player2) {
-    const iconFlag1 = `./assets/countryflags/icon-${player1}.svg`;
+    const iconFlag1 = `./src/countryflags/icon-${player1}.svg`;
 
     return `
     <li>
